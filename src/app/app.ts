@@ -4,10 +4,12 @@ import { Menu } from "./menu/menu";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu],
+  imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('app');
+  isMenuOpen = false;
+  
 }
